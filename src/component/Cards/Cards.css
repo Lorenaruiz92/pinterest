@@ -1,0 +1,42 @@
+.cards{
+width: 350px;
+height: 400px;
+position: relative;
+overflow: hidden;
+border-radius: 10px;
+cursor: pointer;
+
+}
+cards:hover{
+    transform: scale(1.02);
+}
+
+.images{
+width: 100%;
+height:100% ;
+object-fit: cover;
+
+
+}
+.info-image{
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    padding: 5px;
+
+
+}
+.cards-likes{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px;
+
+} 
+ .photo{
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    border-radius: 8px;
+    border: 8px ,solid , rgb(249, 177, 68);
+ }

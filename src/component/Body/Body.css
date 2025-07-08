@@ -1,0 +1,19 @@
+ .body-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh-100px);
+    
+}
+
+.images-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90% ;
+    height: calc(100%-20px);
+    padding: 10px;
+    overflow-y: scroll;
+    list-style: none;
+} 
