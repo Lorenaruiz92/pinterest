@@ -12,4 +12,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --color-secundario: rgb(217, 217, 217);
+}
+
+*{
+  margin: 0;
+  padding: 0%;
+  
 }

@@ -6,7 +6,7 @@ export default function Cards(imageData){
     cardsContainer.className = "cards";
 
     const image = document.createElement("img");
-     image.src = `imageData.urls.small`;
+     image.src = `${imageData.urls.small}`;
      image.className = "images";
 
     const infoImage = document.createElement("p");
@@ -18,16 +18,16 @@ export default function Cards(imageData){
       likes.textContent = ` ${imageData.likes}❤️`;
 
       const photo = document.createElement("img");
-      photo.src = photo.urls;
+      photo.src = `${imageData.user.profile_image.large}`;
       photo.className = "photo";
 
       const date = document.createElement("p");
       date.className = "date";
+      date.textContent = `${imageData.created_at}`;
+    
 
-   cardsContainer.append(image);
-   image.append(infoImage,likes,photo,date)
-
-   
+   cardsContainer.append(image, infoImage, likes, photo, date);
+  
 
 
      return cardsContainer;

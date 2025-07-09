@@ -2,6 +2,7 @@
 import fetchApi from "../Utils/fetchApi";
 import printImages from "../Utils/printImages";
 import "./Header.css";
+
  export const Header = () => {
     const header = document.createElement("header");
     const app = document.querySelector("#app");
@@ -35,6 +36,10 @@ import "./Header.css";
 
     header.append(logo,button,menu,icon,buscador,alert);
     app.append(header);
+
+    button.addEventListener("click", () => {
+       printImages('gatos');
+    })
 
     buscador.addEventListener(`keydown`, async (e) => {
             if(e.key == "Enter"){

@@ -1,4 +1,5 @@
 import fetchApi from "./fetchApi";
+import Cards from "../Cards/Cards";
 
 export default async function printImages(query){
 
@@ -10,7 +11,7 @@ if(bodyContainer) bodyContainer.innerHTML= "";
 try {
     const result = await fetchApi(query);
     result.forEach(image => {
-        const newCard = cards(image);
+        const newCard = Cards(image);
 
         bodyContainer.appendChild(newCard)
     });
